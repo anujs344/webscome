@@ -1,0 +1,25 @@
+        
+        .over-txt{
+            font-size: 27px;
+        }
+        .privacy-txt{
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .para{
+            color: #ccc;
+        }
+        .paragraph-0{
+            font-size: 19px;
+        }
+        .btn-primary-0 {
+            background: #0066FF;
+            border-radius: 20px;
+            border: none;
+            padding: 13px 50px;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 0.4px;
+            float: right;
+            margin-top: 25px;
+        }

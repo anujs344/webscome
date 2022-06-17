@@ -1,0 +1,49 @@
+       
+       .contact-bg{
+            background: linear-gradient(103.5deg, #003B95 20.29%, #0063F7 105.84%);
+            color: white;
+            padding:4rem 0;
+        }
+        .con-head{
+            font-weight: 600;
+        }
+        .contact-0{
+            display: flex;
+            align-items: normal;
+            padding-top: 45px;
+        }
+        .con-icon{
+            color: #63A1FF;
+            font-size: 25px;
+            padding-right: 20px;
+        }
+        .con-txt{
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .frm-bg-color{
+            background: white;
+            padding: 4rem 30px;
+            border-radius: 25px;
+        }
+        .txt-color{
+            color: black;
+            padding-top: 20px;
+        }
+        .textarea-color{
+            background: #F5F5F5;
+        }
+        .frm-radius{
+            border-radius: 20px;
+            padding: 20px 15px;
+        }
+        .btn-primary-0 {
+            background: #005EEB;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            padding: 10px 50px;
+            float: right;
+            margin-top: 20px;
+        }
+        

@@ -1,0 +1,2 @@
+[07-Apr-2022 12:17:53 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2621440 bytes) in /home/webscome/public_html/vendor/composer/autoload_classmap.php on line 4080
+[07-Apr-2022 12:17:53 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 20480 bytes) in /home/webscome/public_html/vendor/nunomaduro/collision/src/Highlighter.php on line 138

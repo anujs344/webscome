@@ -1,0 +1,86 @@
+        body{
+            background: #E5E5E5;
+        }
+        .career-head{
+            font-size: 45px;
+            font-weight: 700;
+            color: black;
+            padding: 25px 0;
+        }
+        .frm-txt{
+            background: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            padding: 25px 65px;
+            margin: 0 10px;
+        }
+        .btn-frm{
+            background: #0066FF;
+            border-radius: 25px;
+            padding: 12px 100px;
+            box-shadow: 0px 4px 50px rgba(0, 99, 247, 0.50);
+            color: white;
+            margin: 0 10px;
+        }
+        .flex-txt{
+            display: flex;
+            align-items: normal;
+        }
+        .bg-color-0{
+            background: white;
+            box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 25px 15px;
+        }
+        .dots-right{
+            float: right;
+        }
+        .fa-blogger-b, .fa-paperclip, .fa-map-marker-alt{
+            color: #6C6C6C;
+            font-size: 20px;
+            padding: 010px;
+        }
+        .txt-0{
+            color: #6C6C6C;
+            padding: 5px 10px;
+        }
+        .txt-1{
+            color: #6C6C6C;
+            padding-left: 70px;
+        }
+        .btn-blog-0{
+            background: white;
+            border: 3px solid #0066FF;
+            border-radius: 15px;
+            padding: 10px 45px;
+            margin: 10px;
+        }
+        .btn-blog-1{
+            background: #0066FF;
+            border-radius: 15px;
+            color: white;
+            padding: 10px 45px;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width: 768px){
+            .bg-color-0{
+                margin: 15px 0;
+            }
+            .btn-frm{
+                margin: 10px 10px;
+            }
+        }
+
+        @media only screen and (max-width: 600px){
+            .bg-color-0{
+                margin: 15px 0;
+            }
+            .btn-frm{
+                margin: 10px 10px;
+            }
+            .frm-txt{
+                margin: 10px 10px;
+            }
+        }
+        

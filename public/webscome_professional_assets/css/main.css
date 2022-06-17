@@ -1,0 +1,158 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+body{
+
+	background: #FFFFFF !important; 
+  font-family: 'Oswald', sans-serif !important;
+}
+
+
+/* General  */
+.box-webscome{
+	box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.22);
+	border-radius: 10px;
+}
+.img-fit-w{
+	width: 100%;
+	height: auto;
+}
+.glow-green{
+  
+  color: #5cb85c;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #00BFFF, 0 0 30px #00BFFF;
+  }
+}
+
+/* Menu dropdown on hover  */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+}
+
+
+/* Menu */
+
+.menu-logo{
+	height: 60px;
+	width: auto;
+}
+.nav-color{
+	color: #ffffff;
+	background: #003F5E;
+}
+.menu-item{
+	color: #ffffff;
+	font-weight: bold;
+}
+.menu-item a{
+	color: #ffffff;
+
+}
+.menu-item a:hover{
+	color: #ffffff;
+	font-size: 105%;
+	text-decoration-line: underline;
+  	text-decoration-style: solid;
+}
+.active{
+	border-bottom: 2px solid #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+	.menu-logo{
+		height: 40px;
+		width: auto;
+	}
+}
+/* Menu End */
+
+/*  Banner 
+  position: relative; */
+.banner{
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+
+}
+.about-banner{
+	background-image: url(../images/banner-1.jpg);
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+
+}
+.gen-banner{
+	background-image: url(../images/banner-1.jpg);
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+
+}
+.text-ar-blk{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.blue-form-box{
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+/* Footer   */
+
+.footer-box{
+	color: #ffffff;
+	background: #003F5E;
+
+}
+.footer-box a{
+	color: #ffffff;
+
+}
+.footer-box a:hover{
+	color: #000000;
+	font-weight: bold;
+
+}
+.footer-logo{
+	width:auto; 
+	height: 50px;
+}
+.footer-store{
+	width:auto; 
+	height: 50px;
+}
+@media only screen and (max-width: 600px) {
+	.footer-store{
+		width:auto;
+		height: 30px;
+	}
+}
+
+.f-rp-btn{
+	
+}
+/* Footer End  */
+
