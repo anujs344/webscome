@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Coupon;
 use Illuminate\Http\Request;
@@ -26,8 +27,7 @@ class CouponController extends Controller
         $coupons= DB::table('coupons')
             ->select('coupons.*')
             ->paginate(10);
-        
-        return response()->json($coupons, 200);
+        return view('admin.coupons.index')->with('coupons',$coupons);
     }
 
     /**
@@ -38,7 +38,8 @@ class CouponController extends Controller
     public function create()
     {
         $categories=Category::all();
-        return response()->json($categories, 200);
+
+        return view('admin.coupons.create')->with('categories',$categories);
     }
 
     /**
@@ -70,7 +71,7 @@ class CouponController extends Controller
 
         $coupon->save();
 
-        return response()->json(['success' => 'Coupon created'], 200);
+        return redirect('/coupons')->with('success','Coupon created');
     }
 
     /**
@@ -96,7 +97,7 @@ class CouponController extends Controller
         $coupon= Coupon::find($id);
 
         //passing coupon and all categories;
-        return response()->json($coupon, 200);
+        return view('admin.coupons.edit')->with('coupon',$coupon);
     }
 
     /**
@@ -130,8 +131,8 @@ class CouponController extends Controller
         $coupon->status='1';
 
         $coupon->save();
-        return response()->json(['success' => 'Coupen updated'], 200);
 
+        return redirect('/coupons')->with('success','Coupon updated');
     }
 
     /**
@@ -145,6 +146,6 @@ class CouponController extends Controller
         $coupon =Coupon::find($id);
 
         $coupon->delete();
-        return response()->json(['success' => 'Coupen Removed successfully'], 200);
+        return redirect('/coupons')->with('success','Coupon Removed successfully.');
     }
 }

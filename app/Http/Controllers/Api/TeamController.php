@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,6 @@ class TeamController extends Controller
 
     function index(){
         $teams = Team::where('name','!=','')->paginate(3);
-        return response()->json($teams, 200);
         return view('admin.teams.index',compact('teams'));
     }
 
@@ -59,7 +59,7 @@ class TeamController extends Controller
         $member->img_url =  $FileNameToStore;
         $member->save();
 
-        return response()->json(['success' => 'New member Added'], 200);
+        return redirect('/teams')->with('success','New member Added');
 
     }
 }
